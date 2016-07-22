@@ -29,7 +29,14 @@ ___
 
 * ブラウザはHTMLを上から下へ読み込む    
   * 通常HTMLやCSSの記載された内容はjQueryやJavaScriptの記載された内容の後に読み込まれるためHTMLやCSSで記載した内容を操作できない。     
-  * 「$(document).ready」
-  HTMLを全て読み込んだあとにjQueryやJavaScripが読み込まれる記述
+  　→「$(document).ready」を使用すると、HTMLを全て読み込んだあとにjQueryやJavaScripが読み込まれる。
+
+```
+<script>
+$(document).ready(function({
+  //この中に書かれた記述は、HTMLを全て読み込んだ後に読み込まれる。
+  })；
+</script>
+```
 
 （jQueryレッスンブック　Cherpter2参照）
